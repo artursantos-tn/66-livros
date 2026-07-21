@@ -1,0 +1,97 @@
+.modal-play-game {
+    display: block;
+
+    position: absolute;
+    top: 10vh;
+    left: auto;
+    width: 90vw;
+    height: 80vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+    
+    background: #0c0c0c;
+
+    border: 1px solid #c4a600;
+    border-radius: 24px;
+
+    box-shadow: 0 0 10px black;
+    
+    z-index: 1000;
+
+    padding: 15rem 0;
+}
+
+.modal-play-game.closed {
+    pointer-events: none;
+
+    animation: modalOut 0.5s forwards;
+}
+
+.modal-play-game h1 {
+
+    color: #ffd700;
+    
+    font-family: "Mozilla Text", sans-serif;
+    font-size: 3rem;
+
+    margin-bottom: 1rem;
+
+}
+
+.modal-play-game p {
+
+    color: white;
+    
+    font-family: "Mozilla Text", sans-serif;
+    font-size: 2rem;
+
+}
+
+.modal-play-game button {
+    
+    background-color: #ffd700;
+    color: #181818;
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    border: none;
+    border-radius: 5px;
+    
+    margin-top: 20px;
+    padding: 15px 40px;
+
+    cursor: pointer;
+
+}
+
+.modal-play-game button:hover {
+
+    background-color: #c4a600;
+
+}
+
+.modal-play-game button:active {
+
+    background-color: #181818;
+    color: #ffd700
+    
+}
+
+@keyframes modalOut {
+    0% {
+        left: 5vw;
+        opacity: 1;
+    }
+
+    100% {
+        left: -100vw;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}

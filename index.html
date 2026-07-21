@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OS 66 LIVROS</title>
+
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/modalPlayGame.css">
+        <link rel="stylesheet" href="css/modalAbrirPerguntas.css">
+        <link rel="stylesheet" href="css/section.css">
+
+        <link rel="shortcut icon" href="assets/png/biblia.png" type="image/x-icon">
+
+        <script src="https://kit.fontawesome.com/64a86c5209.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+        <div class="modal-play-game" id="modalplaygame">
+            
+            <h1>OS 66 LIVROS</h1>
+
+            <p>Aperte o play</p>
+
+            <button id="buttonPlay">PLAY</button>
+
+        </div>
+
+        <div class="modal-perguntas closed" id="modalPerguntas">
+            <div class="container-botoes-perguntas"></div>
+
+            <i class="fa-solid fa-x" id="fa-solid"></i>
+    
+            <div class="container-conteudo-pergunta">
+                <p id="texto-pergunta">Selecione uma pergunta acima.</p>
+                <div id="alternativas"></div>
+            </div>
+        </div>
+
+        <section class="cards-livros" id="cards-livros">
+            
+        </section>
+
+        <script type="module" src="js/script.js"></script>
+        
+    </body>
+</html>

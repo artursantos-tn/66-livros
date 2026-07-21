@@ -1,0 +1,94 @@
+section.cards-livros {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+
+    width: 70vw;
+    /* max-width: 1000px; */
+    
+    padding: 2rem;
+}
+
+section.cards-livros div.livro-card {
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f3f1ed;
+        
+    border: 2px solid #0080ff;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    text-align: center;
+    
+    width: 150px;
+    height: 100px;
+    
+    cursor: pointer;
+
+    user-select: none;
+
+}
+
+section.cards-livros div.livro-card.closed {
+
+    pointer-events: none;
+
+    background: #d80020;
+    color: #a30018;
+
+    border-color: #a30018;
+
+    cursor: not-allowed;
+
+}
+
+section.cards-livros div.livro-card:hover {
+    background: #f8f9fa;
+    border-color: #00376e;
+
+    transform: scale(1.05);
+}
+
+section.cards-livros div.livro-card:active {
+    
+    background: #0577e9;
+    color: white;
+
+    border-color: #002850;
+
+    transform: scale(1.05);
+}
+
+section.cards-livros div.livro-card p {
+        
+    font-family: "Mozilla Text", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+
+section.cards-livros div.livro-card p.id-livro {
+    
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    
+    color: gray;
+
+}
+
+section.cards-livros div.livro-card:active p.id-livro {
+    
+    color: white;
+
+}
+
+section.cards-livros div.livro-card.closed p.id-livro{
+
+    color: #a30018;
+
+}
