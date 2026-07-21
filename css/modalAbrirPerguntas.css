@@ -140,6 +140,8 @@ div.modal-perguntas div.container-conteudo-pergunta p {
 div.modal-perguntas div.container-conteudo-pergunta div#alternativas {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+
+  justify-items: center;
   
   gap: 0.75rem;
   
@@ -147,6 +149,7 @@ div.modal-perguntas div.container-conteudo-pergunta div#alternativas {
 }
 
 div.modal-perguntas div.container-conteudo-pergunta div#alternativas button {
+  
   background: var(--bg-primary);
   color: var(--text-main);
   
@@ -190,5 +193,22 @@ div.modal-perguntas div.container-conteudo-pergunta div#alternativas button.erra
 @media(min-width: 768px) {
   div.modal-perguntas div.container-conteudo-pergunta div#alternativas {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 768px) {
+
+  div.modal-perguntas {
+    padding: 1rem 1.5rem;
+  }
+
+  div.modal-perguntas div.container-conteudo-pergunta p {
+    font-size: 1.5rem;
+  }
+
+  div.modal-perguntas div.container-conteudo-pergunta div#alternativas button {
+    font-size: 1rem;
+
+    width: 300px;
   }
 }

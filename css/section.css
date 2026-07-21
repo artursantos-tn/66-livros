@@ -8,7 +8,6 @@ section.cards-all-livros {
     padding: 1.5rem 2rem;
     max-width: 1400px;
     
-    margin: 0 auto;
 }
 
 section.cards-all-livros section.container-testamento {
@@ -71,8 +70,6 @@ section.cards-all-livros section.container-testamento div.cards-livros div.livro
     cursor: pointer;
 
     user-select: none;
-
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 section.cards-all-livros section.container-testamento div.cards-livros div.livro-card:hover {
@@ -124,6 +121,64 @@ section.cards-all-livros section.container-testamento div.cards-livros div.livro
 
 @media(max-width: 1440px) {
 
+    section.cards-all-livros {
+        gap: 1rem;
+
+        padding: 1.5rem 0;
+    }
+
+    section.cards-all-livros section.container-testamento div.cards-livros {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    section.cards-all-livros section.container-testamento div.cards-livros div.livro-card {
+        overflow-wrap: break-word;
+        word-break: break-word;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        
+        width: 130px;
+        height: 70px;
+    }    
     
+}
+
+@media(max-width: 1024px) {
+
+    section.cards-all-livros section.container-testamento div.cards-livros {
+        grid-template-columns: repeat(3, 1fr);
+    }   
+    
+}
+
+@media(max-width: 768px) {
+
+    section.cards-all-livros section.container-testamento div.cards-livros {
+        grid-template-columns: repeat(2, 1fr);
+    }   
+    
+}
+
+@media(max-width: 430px) {
+
+    section.cards-all-livros {
+
+        flex-direction: column;
+        
+        padding: 1.5rem 0.5rem;
+
+    }
+
+    section.cards-all-livros section.container-testamento div.cards-livros {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section.cards-all-livros section.container-testamento div.cards-livros div.livro-card {
+        font-size: 0.7rem;
+
+        width: 120px;
+        height: 70px;
+    }
     
 }
