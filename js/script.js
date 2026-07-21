@@ -1,27 +1,40 @@
 import { bibliaAntigoTestamento } from './livros.js';
-// import { bibliaNovoTestamento } from './livros.js';
+import { bibliaNovoTestamento } from './livros.js';
 
-let livrosDisponiveis = [...bibliaAntigoTestamento.livros];
-let livrosConcluidos = [];
+const modalPlayGame = document.getElementById('modalplaygame');
+const buttonPlayGame = document.getElementById('buttonPlay');
 
-const modalPlayGame = document.getElementById('modalplaygame')
-const buttonPlayGame = document.getElementById('buttonPlay')
+const modalPerguntas = document.getElementById('modalPerguntas');
 
-let iFaSolid = document.getElementById('fa-solid')
-let textoPergunta = document.getElementById('texto-pergunta')
-let containerAlternativas = document.getElementById('alternativas')
+const iFaSolid = document.getElementById('fa-solid');
+const textoPergunta = document.getElementById('texto-pergunta');
+const containerAlternativas = document.getElementById('alternativas');
+
+const testamentoH2 = document.querySelectorAll('h2')
 
 function loadCartsLivros() {
     
-    modalPlayGame.classList.add('closed')
-    const quantidadeLivros = livrosDisponiveis.length
+    modalPlayGame.classList.add('closed');
 
-    const sectionCardLivros = document.getElementById('cards-livros')
+    testamentoH2.forEach(h => {
+
+        h.style.visibility = 'visible'
+
+    })
+
+    renderizarTestamento(bibliaAntigoTestamento.livros, 'cards-antigo');
+    renderizarTestamento(bibliaNovoTestamento.livros, 'cards-novo');
+
+}
+
+function renderizarTestamento(listaLivros, secaoId) {
     
-    livrosDisponiveis.forEach(livro => {
+    const sectionCardLivros = document.getElementById(secaoId)
+    sectionCardLivros.innerHTML = ''
+
+    listaLivros.forEach(livro => {
 
         const div = document.createElement('div')
-
         const idFormatado = livro.id < 10 ? '0' + livro.id : livro.id
 
         div.classList.add('livro-card')
@@ -33,7 +46,7 @@ function loadCartsLivros() {
 
             console.log(`Você clicou no livro: ${livro.nome}`);
             abrirPergunta(livro)
-            div.classList.add('closed')
+            div.classList.add('blocked')
 
         })
 
@@ -41,47 +54,48 @@ function loadCartsLivros() {
         
     })
 
-    console.log(livrosDisponiveis.length);
+    console.log(`Total de livros carregados: ${listaLivros.length}`);
 
 }
 
 function abrirPergunta(livro) {
-    const modalPerguntas = document.getElementById('modalPerguntas')
+
     modalPerguntas.classList.remove('closed')
 
     const containerNumeros = document.querySelector('.container-botoes-perguntas')
     containerNumeros.innerHTML = ''
     containerNumeros.classList.remove('closed')
 
-    for (let i = 0; i < 5; i++) {
-        
+    livro.perguntas.forEach((_, index) => {
+
         const btn = document.createElement('button')
         btn.classList.add('btn-numero');
-        btn.textContent = `${i + 1}`
+        btn.textContent = `${index + 1}`
 
         btn.addEventListener('click', ()=> {
 
-            const perguntaSelecionada = livro.perguntas[i];
+            const perguntaSelecionada = livro.perguntas[index];
             containerNumeros.classList.add('closed')
             exibirPerguntaDetalhada(perguntaSelecionada);
-            iFaSolid.style.visibility = 'visible'
 
         })
 
         containerNumeros.appendChild(btn)
-        
-    }
 
-    iFaSolid.addEventListener('click', ()=> {
-
-        modalPerguntas.classList.add('closed')
-
-        textoPergunta.textContent = ''
-        containerAlternativas.innerHTML = ''
-
-    })
+    });
 
 }
+
+iFaSolid.addEventListener('click', ()=> {
+
+    const modalPerguntas = document.getElementById('modalPerguntas');
+    modalPerguntas.classList.add('closed')
+
+    textoPergunta.textContent = 'Selecione uma pergunta acima.'
+    containerAlternativas.innerHTML = ''
+    iFaSolid.style.visibility = 'hidden'
+
+})
 
 function exibirPerguntaDetalhada(pergunta) {
 
@@ -96,13 +110,26 @@ function exibirPerguntaDetalhada(pergunta) {
 
         btnAlt.addEventListener('click', ()=> {
 
+            const todosBotoes = containerAlternativas.querySelectorAll('button')
+            todosBotoes.forEach(b => b.disabled = true);
+
             if (pergunta.respostaCorreta == letraAlt) {
-                console.log(`Alternativa ${letraAlt} está CORRETA`);
+                console.log(`Alternativa ${letraAlt}) ${textoAlt} | está CORRETA`);
                 btnAlt.classList.add('correta')
             } else {
-                console.log(`Alternativa ${letraAlt} está ERRADA`);
+                console.log(`Alternativa ${letraAlt}) ${textoAlt} | está ERRADA`);
                 btnAlt.classList.add('errada')
+                
+                // OPCIONAL, VOU VER SE VOU GOSTAR, E DEPOIS ADICIONAR UM TEMPO
+                todosBotoes.forEach(b => {
+                    if (b.textContent.startsWith(pergunta.respostaCorreta + ')')) {
+                        b.classList.add('correta');
+                    }
+                });
+
             }
+
+            iFaSolid.style.visibility = 'visible'
 
         })
 

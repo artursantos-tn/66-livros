@@ -473,3 +473,332 @@ export const bibliaAntigoTestamento = {
 
   ]
 };
+
+export const bibliaNovoTestamento = {
+  livros: [
+    {
+      id: 1,
+      nome: "Mateus",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Em qual cidade Jesus nasceu?", opcoes: { a: "Nazaré", b: "Belém", c: "Jerusalém", d: "Cafarnaum" }, respostaCorreta: "b" },
+        { pergunta: "Quem batizou Jesus no rio Jordão?", opcoes: { a: "João Batista", b: "Pedro", c: "Tiago", d: "André" }, respostaCorreta: "a" },
+        { pergunta: "Qual era a profissão de Mateus antes de seguir a Jesus?", opcoes: { a: "Pescador", b: "Carpinteiro", c: "Publicano (cobrador de impostos)", d: "Fariseu" }, respostaCorreta: "c" },
+        { pergunta: "Qual é o nome do monte onde Jesus proferiu o famoso Sermão da Montanha?", opcoes: { a: "Monte das Oliveiras", b: "Monte Sinai", c: "Monte Carmelo", d: "Monte das Bem-Aventuranças" }, respostaCorreta: "d" },
+        { pergunta: "Quantos discípulos principais (apóstolos) Jesus escolheu?", opcoes: { a: "7", b: "10", c: "12", d: "40" }, respostaCorreta: "c" }
+      ]
+    },
+    {
+      id: 2,
+      nome: "Marcos",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "O Evangelho de Marcos é conhecido por destacar qual característica rápida de Jesus?", opcoes: { a: "Suas parábolas longas", b: "Suas ações imediatas e o uso da palavra 'logo'", c: "Sua genealogia detalhada", d: "Sua infância" }, respostaCorreta: "b" },
+        { pergunta: "Quem ajudou Jesus a carregar a cruz no caminho para o Gólgota, segundo Marcos?", opcoes: { a: "Simão de Cirene", b: "José de Arimateia", c: "Nicodemos", d: "João" }, respostaCorreta: "a" },
+        { pergunta: "Qual animal ruge e é usado como metáfora para o diabo, cujo espírito de urgência permeia o início de Marcos?", opcoes: { a: "Leão", b: "Lobo", c: "Urso", d: "Serpente" }, respostaCorreta: "a" },
+        { pergunta: "No final do livro de Marcos, qual foi a última ordem de Jesus aos discípulos?", opcoes: { a: "Ficar em Jerusalém para sempre", b: "Pregar o evangelho a toda criatura", c: "Construir templos", d: "Escrever cartas" }, respostaCorreta: "b" },
+        { pergunta: "Quem foi o jovem que fugiu nu quando Jesus foi preso no Getsêmani, segundo a tradição?", opcoes: { a: "O próprio Marcos", b: "Tiago", c: "Barnabé", d: "João Marcos" }, respostaCorreta: "d" }
+      ]
+    },
+    {
+      id: 3,
+      nome: "Lucas",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Qual era a profissão de Lucas, o autor deste evangelho?", opcoes: { a: "Médico", b: "Pescador", c: "Advogado", d: "Sacerdote" }, respostaCorreta: "a" },
+        { pergunta: "A quem Lucas endereça o seu evangelho e o livro de Atos?", opcoes: { a: "César", b: "Teófilo", c: "Pilatos", d: "Herodes" }, respostaCorreta: "b" },
+        { pergunta: "Qual famosa parábola é encontrada exclusivamente no Evangelho de Lucas?", opcoes: { a: "O semeador", b: "O bom samaritano", c: "As dez virgens", d: "O joio e o trigo" }, respostaCorreta: "b" },
+        { pergunta: "Qual outro nome é dado à oração de louvor de Maria relatada por Lucas no capítulo 1?", opcoes: { a: "Magnificat", b: "Hosana", c: "Benedictus", d: "Glória in Excelsis" }, respostaCorreta: "a" },
+        { pergunta: "No caminho para qual vila dois discípulos reconheceram Jesus ao partir o pão?", opcoes: { a: "Betânia", b: "Emaús", c: "Jericó", d: "Sicar" }, respostaCorreta: "b" }
+      ]
+    },
+    {
+      id: 4,
+      nome: "João",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Como se inicia o Evangelho de João?", opcoes: { a: "Livro da geração de Jesus Cristo...", b: "Princípio do evangelho de Jesus Cristo...", c: "No princípio era o Verbo...", d: "Tendo muitos ouvido a história..." }, respostaCorreta: "c" },
+        { pergunta: "Qual foi o primeiro sinal (milagre) realizado por Jesus, narrado por João?", opcoes: { a: "A cura do cego de nascença", b: "A multiplicação dos pães", c: "A transformação de água em vinho", d: "A pesca milagrosa" }, respostaCorreta: "c" },
+        { pergunta: "Qual líder religioso veio visitar Jesus à noite para conversar sobre o novo nascimento?", opcoes: { a: "Gamaliel", b: "Nicodemos", c: "Caifás", d: "Anás" }, respostaCorreta: "b" },
+        { pergunta: "Complete a frase dita por Jesus em João 14:6: 'Eu sou o caminho, e a verdade, e a...'", opcoes: { a: "Luz", b: "Vida", c: "Porta", d: "Ressurreição" }, respostaCorreta: "b" },
+        { pergunta: "Quem era conhecido como 'o discípulo a quem Jesus amava'?", opcoes: { a: "Pedro", b: "Tiago", c: "João", d: "André" }, respostaCorreta: "c" }
+      ]
+    },
+    {
+      id: 5,
+      nome: "Atos",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Qual evento marcante do Espírito Santo acontece no capítulo 2 de Atos?", opcoes: { a: "A transfiguração", b: "O Pentecostes", c: "A conversão de Paulo", d: "O batismo nas águas" }, respostaCorreta: "b" },
+        { pergunta: "Quem foi o primeiro mártir do cristianismo, relatado em Atos?", opcoes: { a: "Estêvão", b: "Tiago", c: "Filipe", d: "Barnabé" }, respostaCorreta: "a" },
+        { pergunta: "Em qual estrada o apóstolo Paulo teve um encontro transformador com Jesus?", opcoes: { a: "Estrada de Jericó", b: "Caminho de Emaús", c: "Estrada para Damasco", d: "Via Dolorosa" }, respostaCorreta: "c" },
+        { pergunta: "Qual apóstolo teve a visão de um lençol com animais descendo do céu?", opcoes: { a: "João", b: "Tiago", c: "Pedro", d: "Paulo" }, respostaCorreta: "c" },
+        { pergunta: "Para qual grande cidade imperial Paulo foi levado preso no final do livro?", opcoes: { a: "Atenas", b: "Roma", c: "Alexandria", d: "Antioquia" }, respostaCorreta: "b" }
+      ]
+    },
+    {
+      id: 6,
+      nome: "Romanos",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Segundo Romanos 3:23, todos pecaram e carecem de quê?", opcoes: { a: "Da sabedoria", b: "Da glória de Deus", c: "Das riquezas", d: "Do batismo" }, respostaCorreta: "b" },
+        { pergunta: "Qual é o salário do pecado, de acordo com Romanos 6:23?", opcoes: { a: "A tristeza", b: "A morte", c: "O sofrimento", d: "A condenação eterna" }, respostaCorreta: "b" },
+        { pergunta: "Em Romanos 8:28, diz-se que todas as coisas cooperam para o bem daqueles que...", opcoes: { a: "Fazem caridade", b: "Amam a Deus", c: "Guardam a lei", d: "Oram sempre" }, respostaCorreta: "b" },
+        { pergunta: "Qual patriarca é usado em Romanos 4 como exemplo de justificação pela fé?", opcoes: { a: "Moisés", b: "Davi", c: "Abraão", d: "Jacó" }, respostaCorreta: "c" },
+        { pergunta: "Segundo Romanos 10:9, o que devemos confessar para sermos salvos?", opcoes: { a: "Que os anjos existem", b: "Que Jesus é o Senhor", c: "Que a Bíblia é sagrada", d: "Que o mundo vai acabar" }, respostaCorreta: "b" }
+      ]
+    },
+    {
+      id: 7,
+      nome: "1 Coríntios",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Qual é o capítulo de 1 Coríntios conhecido como o 'Capítulo do Amor'?", opcoes: { a: "Capítulo 3", b: "Capítulo 10", c: "Capítulo 13", d: "Capítulo 15" }, respostaCorreta: "c" },
+        { pergunta: "O que Paulo diz que o corpo dos crentes é, no capítulo 6?", opcoes: { a: "Templo do Espírito Santo", b: "Casa de oração", c: "Instrumento de pecado", d: "Pó da terra" }, respostaCorreta: "a" },
+        { pergunta: "Qual o tema central abordado por Paulo no capítulo 15 de 1 Coríntios?", opcoes: { a: "O casamento", b: "A ressurreição dos mortos", c: "A ceia do Senhor", d: "Os dons espirituais" }, respostaCorreta: "b" },
+        { pergunta: "Segundo 1 Coríntios 13, quais são as três virtudes que permanecem?", opcoes: { a: "Fé, esperança e amor", b: "Paz, alegria e bondade", c: "Sabedoria, força e justiça", d: "Jejum, oração e caridade" }, respostaCorreta: "a" },
+        { pergunta: "Por que a igreja de Coríntios estava dividida no início da carta?", opcoes: { a: "Por causa de dinheiro", b: "Porque seguiam líderes diferentes", c: "Por disputas de terras", d: "Por causa do idioma" }, respostaCorreta: "b" }
+      ]
+    },
+    {
+      id: 8,
+      nome: "2 Coríntios",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Segundo 2 Coríntios 5:17, se alguém está em Cristo, o que ele é?", opcoes: { a: "Uma nova criatura", b: "Um profeta", c: "Um anjo na terra", d: "Um homem perfeito" }, respostaCorreta: "a" },
+        { pergunta: "De acordo com 2 Coríntios 9:7, que tipo de doador Deus ama?", opcoes: { a: "O que dá por obrigação", b: "O que oferta em segredo", c: "O que dá com alegria", d: "O que entrega tudo" }, respostaCorreta: "c" },
+        { pergunta: "Qual espinho Paulo relata ter recebido para que não se exaltasse?", opcoes: { a: "Um espinho na carne", b: "Oposição de governantes", c: "Problemas financeiros", d: "Perseguição familiar" }, respostaCorreta: "a" },
+        { pergunta: "Segundo 2 Coríntios 12:9, onde a força de Deus se aperfeiçoa?", opcoes: { a: "Na nossa justiça", b: "Na nossa fraqueza", c: "Na nossa sabedoria", d: "Na nossa riqueza" }, respostaCorreta: "b" },
+        { pergunta: "O que as armas espirituais dos cristãos são poderosas em Deus para destruir?", opcoes: { a: "Fortalezas", b: "Impérios", c: "Exércitos", d: "Leis injustas" }, respostaCorreta: "a" }
+      ]
+    },
+    {
+      id: 9,
+      nome: "Gálatas",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Quais são os primeiros frutos do Espírito listados em Gálatas 5:22?", opcoes: { a: "Fé, milagres e curas", b: "Amor, alegria, paz, longanimidade...", c: "Jejum, oração e dízimo", d: "Sabedoria, entendimento e conselho" }, respostaCorreta: "b" },
+        { pergunta: "Contra o que Paulo diz que não há lei, ao listar os frutos do Espírito?", opcoes: { a: "Contra tais coisas", b: "Contra os profetas", c: "Contra os judeus", d: "Contra os romanos" }, respostaCorreta: "a" },
+        { pergunta: "Por que motivo Paulo repreendeu duramente os Gálatas no início da carta?", opcoes: { a: "Por brigas na igreja", b: "Por estarem se desviarem para um outro evangelho", c: "Por não pagarem impostos", d: "Por adoração a falsos deuses" }, respostaCorreta: "b" },
+        { pergunta: "Segundo Gálatas 3:28, em Cristo Jesus não há judeu nem grego, escravo nem livre, e nem o quê?", opcoes: { a: "Rico nem pobre", b: "Homem nem mulher", c: "Sabido nem ignorante", d: "Jovem nem velho" }, respostaCorreta: "b" },
+        { pergunta: "O que Paulo afirma que carrega em seu corpo, em Gálatas 6:17?", opcoes: { a: "Marcas de chicote", b: "As marcas do Senhor Jesus", c: "Cicatrizes de naufrágio", d: "Correntes de ferro" }, respostaCorreta: "b" }
+      ]
+    },
+    {
+      id: 10,
+      nome: "Efésios",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Qual é a peça da armadura de Deus que protege o peito, descrita em Efésios 6?", opcoes: { a: "O capacete da salvação", b: "A couraça da justiça", c: "O escudo da fé", d: "A espada do Espírito" }, respostaCorreta: "b" },
+        { pergunta: "Segundo Efésios 2:8, por meio de quê somos salvos, sendo dom de Deus?", opcoes: { a: "Pelas obras", b: "Pela lei", c: "Pela graça, mediante a fé", d: "Pelo sacrifício próprio" }, respostaCorreta: "c" },
+        { pergunta: "Qual peça da armadura de Deus em Efésios 6 representa a Palavra de Deus?", opcoes: { a: "O calçado do evangelho", b: "O escudo da fé", c: "A espada do Espírito", d: "O cinto da verdade" }, respostaCorreta: "c" },
+        { pergunta: "Segundo Efésios 4:26, o que o crente deve fazer em relação à ira?", opcoes: { a: "Guardar no coração", b: "Irarei e não pequeis; não se ponha o sol sobre a vossa ira", c: "Vingar-se com justiça", d: "Esquecer imediatamente" }, respostaCorreta: "b" },
+        { pergunta: "De acordo com Efésios 6, qual é o primeiro mandamento com promessa para os filhos?", opcoes: { a: "Não mentirás", b: "Honra a teu pai e a tua mãe", c: "Guardarás o sábado", d: "Amarás o próximo" }, respostaCorreta: "b" }
+      ]
+    },
+    {
+      id: 11,
+      nome: "Filipenses",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Segundo Filipenses 4:4, em quem devemos nos alegrar sempre?", opcoes: { a: "No mundo", b: "No Senhor", c: "Nas riquezas", d: "Nas tribulações" }, respostaCorreta: "b" },
+        { pergunta: "O que Paulo diz que pode fazer em Cristo que o fortalece, em Filipenses 4:13?", opcoes: { a: "Todas as coisas", b: "Apenas o essencial", c: "Grandes milagres", d: "Fugir da prisão" }, respostaCorreta: "a" },
+        { pergunta: "Qual é o versículo em Filipenses 4 que fala sobre não andarmos ansiosos por coisa alguma?", opcoes: { a: "Versículo 4", b: "Versículo 6", c: "Versículo 13", d: "Versículo 19" }, respostaCorreta: "b" },
+        { pergunta: "Qual sentimento ou atitude de Cristo Paulo recomenda que haja em nós, no capítulo 2?", opcoes: { a: "A soberba", b: "A humildade", c: "A severidade", d: "A indiferença" }, respostaCorreta: "b" },
+        { pergunta: "De acordo com Filipenses 1:21, o que é o viver para Paulo?", opcoes: { a: "Cristo, e o morrer é lucro", b: "Ganhar o mundo", c: "Ajudar os pobres", d: "Viajar e pregar" }, respostaCorreta: "a" }
+      ]
+    },
+    {
+      id: 12,
+      nome: "Colossenses",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Segundo Colossenses 3:2, onde devemos fixar os nossos pensamentos?", opcoes: { a: "Nas coisas da terra", b: "Nas coisas lá do alto", c: "No futuro da igreja", d: "Nos problemas diários" }, respostaCorreta: "b" },
+        { pergunta: "De acordo com Colossenses 1, quem é a imagem do Deus invisível e o primogênito de toda a criação?", opcoes: { a: "O Espírito Santo", b: "Jesus Cristo", c: "Anjo Miguel", d: "Abraão" }, respostaCorreta: "b" },
+        { pergunta: "O que Paulo diz para habitar em vós ricamente, em Colossenses 3:16?", opcoes: { a: "A palavra de Cristo", b: "O ouro e a prata", c: "A sabedoria humana", d: "O jejum prolongado" }, respostaCorreta: "a" },
+        { pergunta: "Segundo Colossenses 2:9, o que habita corporalmente em Cristo?", opcoes: { a: "Apenas um sopro divino", b: "Toda a plenitude da divindade", c: "Os dons proféticos", d: "A lei de Moisés" }, respostaCorreta: "b" },
+        { pergunta: "Como Paulo diz que devemos conduzir-nos em relação aos que estão de fora, em Colossenses 4:5?", opcoes: { a: "Com rigor", b: "Com sabedoria, aproveitando o tempo", c: "Com desconfiança", d: "Ignorando-os" }, respostaCorreta: "b" }
+      ]
+    },
+    {
+      id: 13,
+      nome: "1 Tessalonicenses",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Segundo 1 Tessalonicenses 5:17, o que devemos fazer...?", opcoes: { a: "Orai sem cessar", b: "Jejuar todo mês", c: "Contribuir sempre", d: "Vigiar o templo" }, respostaCorreta: "a" },
+        { pergunta: "De acordo com 1 Tessalonicenses 5:18, em que situação devemos dar graças?", opcoes: { a: "Apenas quando formos ricos", b: "Em tudo", c: "Somente na alegria", d: "Quando orarmos de joelhos" }, respostaCorreta: "b" },
+        { pergunta: "O que Paulo diz que a vontade de Deus é para os crentes, em 1 Tessalonicenses 4:3?", opcoes: { a: "A vossa santificação", b: "A vossa riqueza", c: "O vosso silêncio", d: "A vossa mudança de cidade" }, respostaCorreta: "a" },
+        { pergunta: "Como o Dia do Senhor virá, segundo a metáfora usada em 1 Tessalonicenses 5:2?", opcoes: { a: "Como um ladrão de noite", b: "Como o nascer do sol", c: "Como uma tempestade anunciada", d: "Como um terremoto" }, respostaCorreta: "a" },
+        { pergunta: "O que Paulo pede para não apagarmos, em 1 Tessalonicenses 5:19?", opcoes: { a: "A luz do templo", b: "O Espírito", c: "O amor fraternal", d: "A chama da fé" }, respostaCorreta: "b" }
+      ]
+    },
+    {
+      id: 14,
+      nome: "2 Tessalonicenses",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Segundo 2 Tessalonicenses 3:10, o que Paulo diz sobre quem não quer trabalhar?", opcoes: { a: "Deve receber ajuda dos irmãos", b: "Também não coma", c: "Deve orar mais", d: "Deve cuidar da limpeza" }, respostaCorreta: "b" },
+        { pergunta: "O que antecederá a manifestação do 'homem do pecado' (o anticristo), segundo 2 Tessalonicenses 2:3?", opcoes: { a: "Uma grande guerra mundial", b: "A apostasia", c: "A queda de Roma", d: "Uma fome global" }, respostaCorreta: "b" },
+        { pergunta: "O que o Senhor é, segundo 2 Tessalonicenses 3:3, que vos confirmará e guardará do maligno?", opcoes: { a: "Justo e poderoso", b: "Fiel", c: "Misericordioso e brando", d: "Rigoroso" }, respostaCorreta: "b" },
+        { pergunta: "O que Paulo ora para que o Senhor dirija o coração dos irmãos, em 2 Tessalonicenses 3:5?", opcoes: { a: "Para o amor de Deus e para a constância de Cristo", b: "Para a obediência às leis", c: "Para o estudo das profecias", d: "Para o fim dos tempos" }, respostaCorreta: "a" },
+        { pergunta: "Como devemos nos apartar de todo irmão que anda desordenadamente, segundo 2 Tessalonicenses 3:6?", opcoes: { a: "Para que se sinta ofendido", b: "Para que se envergonhe", c: "Para expulsá-lo da cidade", d: "Para nunca mais falar" }, respostaCorreta: "b" }
+      ]
+    },
+    {
+      id: 15,
+      nome: "1 Timóteo",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Segundo 1 Timóteo 6:10, o que é a raiz de todos os males?", opcoes: { a: "O orgulho", b: "A ociosidade", c: "O amor ao dinheiro", d: "A falta de fé" }, respostaCorreta: "c" },
+        { pergunta: "O que Paulo diz a Timóteo para beber por causa do estômago e frequentes enfermidades, em 1 Timóteo 5:23?", opcoes: { a: "Um pouco de vinho", b: "Chá de ervas", c: "Água pura", d: "Leite de cabra" }, respostaCorreta: "a" },
+        { pergunta: "Segundo 1 Timóteo 2:5, quem é o único mediador entre Deus e os homens?", opcoes: { a: "Moisés", b: "O sumo sacerdote", c: "Cristo Jesus, homem", d: "Pedro" }, respostaCorreta: "c" },
+        { pergunta: "O que é toda a Escritura divinamente inspirada e útil para o ensino, segundo 1 Timóteo 3:16 (citando a inspiração)?", opcoes: { a: "Sim, proveitosa", b: "Sim", c: "Sim, para correção", d: "Sim, para a justiça" }, respostaCorreta: "a" },
+        { pergunta: "O que Timóteo não deve permitir que ninguém despreze, devido à sua juventude, em 1 Timóteo 4:12?", opcoes: { a: "Sua inteligência", b: "Sua autoridade", c: "A sua mocidade", d: "Suas vestes" }, respostaCorreta: "c" }
+      ]
+    },
+    {
+      id: 16,
+      nome: "2 Timóteo",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "O que Paulo diz ter combatido, a carreira completado e a fé guardado, em 2 Timóteo 4:7?", opcoes: { a: "O bom combate", b: "A grande guerra", c: "O mau costume", d: "A falsa doutrina" }, respostaCorreta: "a" },
+        { pergunta: "Segundo 2 Timóteo 3:16, toda Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para quê?", opcoes: { a: "Para a sabedoria humana", b: "Para a instrução na justiça", c: "Para o crescimento financeiro", d: "Para os dons de línguas" }, respostaCorreta: "b" },
+        { pergunta: "O que Paulo pede para Timóteo procurar apresentar-se a Deus aprovado, em 2 Timóteo 2:15?", opcoes: { a: "Como obreiro que não tem o que se envergonhar", b: "Como um sacerdote santo", c: "Como um mestre da lei", d: "Como um líder corajoso" }, respostaCorreta: "a" },
+        { pergunta: "De acordo com 2 Timóteo 1:7, Deus não nos deu o espírito de covardia, mas de quê?", opcoes: { a: "Força, alegria e paz", b: "Poder, de amor e de moderação", c: "Sabedoria, glória e riqueza", d: "Ousadia, fé e milagres" }, respostaCorreta: "b" },
+        { pergunta: "O que Paulo diz que está reservado para ele, o coroa da justiça, segundo 2 Timóteo 4:8?", opcoes: { a: "A coroa da justiça", b: "O reino celestial", c: "A recompensa eterna", d: "O descanso perpétuo" }, respostaCorreta: "a" }
+      ]
+    },
+    {
+      id: 17,
+      nome: "Tito",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Para qual ilha Paulo deixou Tito para pôr em ordem as coisas pendentes?", opcoes: { a: "Chipre", b: "Creta", c: "Patmos", d: "Sicília" }, respostaCorreta: "b" },
+        { pergunta: "Segundo Tito 2:11, qual a graça de Deus se manifestou trazendo salvação a quem?", opcoes: { a: "Apenas aos judeus", b: "A todos os homens", c: "Somente aos crentes batizados", d: "Aos líderes da igreja" }, respostaCorreta: "b" },
+        { pergunta: "O que Tito deve evitar, segundo Tito 3:9, por serem tolas e sem proveito?", opcoes: { a: "Questões tolas, genealogias e contendas", b: "O trabalho secular", c: "O convívio com gentios", d: "O jejum prolongado" }, respostaCorreta: "a" },
+        { pergunta: "Como Paulo descreve o caráter dos cretenses, citando um profeta deles, em Tito 1:12?", opcoes: { a: "Sempre mentirosos, animais gulosos, preguiçosos", b: "Justos e tementes a Deus", c: "Sábios mas descrentes", d: "Trabalhadores e honestos" }, respostaCorreta: "a" },
+        { pergunta: "Segundo Tito 3:5, Deus nos salvou não pelas obras de justiça que tivéssemos feito, mas segundo o quê?", opcoes: { a: "Sua grande misericórdia", b: "Sua santa vontade", c: "Sua eterna aliança", d: "Sua infinita bondade" }, respostaCorreta: "a" }
+      ]
+    },
+    {
+      id: 18,
+      nome: "Filemom",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Qual é o nome do escravo fugitivo cujo retorno Paulo intercede na carta a Filemom?", opcoes: { a: "Onésimo", b: "Tíquico", c: "Áquila", d: "Demas" }, respostaCorreta: "a" },
+        { pergunta: "Como Paulo pede que Filemom receba Onésimo agora, não mais como escravo, mas como o quê?", opcoes: { a: "Um irmão amado", b: "Um sócio fiel", c: "Um homem livre", d: "Um cooperador do evangelho" }, respostaCorreta: "a" },
+        { pergunta: "O que Paulo se propõe a pagar caso Onésimo tenha feito algum dano ou deva alguma coisa a Filemom?", opcoes: { a: "Eu, Paulo, o pagarei de meu punho", b: "A igreja pagará a dívida", c: "Ele trabalhará para pagar", d: "Esqueça toda a dívida" }, respostaCorreta: "a" },
+        { pergunta: "Onde Paulo se encontrava preso quando escreveu esta carta a Filemom?", opcoes: { a: "Na prisão domiciliar / acorrentado", b: "Nas masmorras de Roma", c: "Em Cesaréia", d: "Em Filipos" }, respostaCorreta: "a" },
+        { pergunta: "Qual era a igreja que se reunia na casa de Filemom, mencionada no início da carta?", opcoes: { a: "A igreja que está em sua casa", b: "A igreja de Colossos", c: "A igreja de Laodicéia", d: "A congregação dos santos" }, respostaCorreta: "a" }
+      ]
+    },
+    {
+      id: 19,
+      nome: "Hebreus",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Segundo Hebreus 11:1, o que é a fé?", opcoes: { a: "A certeza das coisas que se esperam e a convicção dos fatos que não se vêem", b: "A força para mover montanhas", c: "A obediência cega aos mandamentos", d: "O cumprimento das promessas divinas" }, respostaCorreta: "a" },
+        { pergunta: "De acordo com Hebreus 4:12, como é a palavra de Deus?", opcoes: { a: "Viva e eficaz, e mais cortante do que qualquer espada de dois gumes", b: "Uma lei imutável para os séculos", c: "Doce como o mel e pura", d: "Uma luz que brilha nas trevas" }, respostaCorreta: "a" },
+        { pergunta: "Segundo Hebreus 13:8, Jesus Cristo é o mesmo...", opcoes: { a: "Ontem, e hoje, e eternamente", b: "Em todos os lugares e tempos", c: "No céu e na terra", d: "Para os judeus e gentios" }, respostaCorreta: "a" },
+        { pergunta: "Sem fé é impossível agradar a quem, segundo Hebreus 11:6?", opcoes: { a: "A Deus", b: "Aos anjos", c: "Ao próximo", d: "A si mesmo" }, respostaCorreta: "a" },
+        { pergunta: "Quem o autor de Hebreus aponta como o sumo sacerdote eterno segundo a ordem de Melquisedeque?", opcoes: { a: "Jesus", b: "Arão", c: "Moisés", d: "Abraão" }, respostaCorreta: "a" }
+      ]
+    },
+    {
+      id: 20,
+      nome: "Tiago",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Segundo Tiago 2:26, o corpo sem o espírito está morto, assim também o que sem as obras está morto?", opcoes: { a: "A fé", b: "A esperança", c: "A oração", d: "A caridade" }, respostaCorreta: "a" },
+        { pergunta: "De acordo com Tiago 1:19, todo homem deve ser pronto para ouvir, tardio para falar e...", opcoes: { a: "Tardio para irar-se", b: "Rápido para julgar", c: "Pronto para agir", d: "Firme na palavra" }, respostaCorreta: "a" },
+        { pergunta: "O que a língua é na descrição de Tiago 3, comparada a um pequeno membro que bota grandes coisas?", opcoes: { a: "Um fogo / um mundo de iniquidade", b: "Uma espada afiada", c: "Uma fonte de águas amargas", d: "Um leão indomável" }, respostaCorreta: "a" },
+        { pergunta: "Segundo Tiago 4:7, o que devemos fazer em relação a Deus e ao diabo?", opcoes: { a: "Sujeitai-vos a Deus; resisti ao diabo, e ele fugirá de vós", b: "Orai a Deus e esquecei o diabo", c: "Busquem a Deus e fujam do mal", d: "Guardai a lei e combatei o mal" }, respostaCorreta: "a" },
+        { pergunta: "Se alguém tem falta de sabedoria, o que deve fazer, segundo Tiago 1:5?", opcoes: { a: "Peça-a a Deus, que a todos dá liberalmente", b: "Estude as Escrituras sagradas", c: "Consulte os anciãos da igreja", d: "Medite em silêncio" }, respostaCorreta: "a" }
+      ]
+    },
+    {
+      id: 21,
+      nome: "1 Pedro",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Segundo 1 Pedro 5:8, o diabo ronda como um leão rugindo procurando a quem quê?", opcoes: { a: "Devorar", b: "Tentar", c: "Enganar", d: "Acatar" }, respostaCorreta: "a" },
+        { pergunta: "De acordo com 1 Pedro 2:9, os cristãos são eleitos, sacerdócio real e qual outro título?", opcoes: { a: "Nação santa, povo exclusivo", b: "Filhos da luz", c: "Herdeiros da glória", d: "Discípulos amados" }, respostaCorreta: "a" },
+        { pergunta: "O que a cobertura do amor encobre, segundo 1 Pedro 4:8?", opcoes: { a: "Multidão de pecados", b: "As falhas humanas", c: "O erro alheio", d: "As fraquezas da carne" }, respostaCorreta: "a" },
+        { pergunta: "Segundo 1 Pedro 3:15, o que devemos estar sempre preparados para dar a todo aquele que nos pedir?", opcoes: { a: "Razão da esperança que há em vós", b: "Uma oferta de paz", c: "Uma palavra de conforto", d: "Testemunho de milagres" }, respostaCorreta: "a" },
+        { pergunta: "Como Pedro descreve a nossa condição passageira neste mundo, em 1 Pedro 2:11?", opcoes: { a: "Como estrangeiros e peregrinos", b: "Como servos inúteis", c: "Como prisioneiros da esperança", d: "Como guardiões da terra" }, respostaCorreta: "a" }
+      ]
+    },
+    {
+      id: 22,
+      nome: "2 Pedro",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Segundo 2 Pedro 3:8, quanto tempo para o Senhor é como um dia e um dia como mil anos?", opcoes: { a: "Um dia", b: "Um milênio", c: "Uma hora", d: "Um século" }, respostaCorreta: "a" },
+        { pergunta: "De acordo com 2 Pedro 1:21, a profecia nunca foi produzida por vontade humana, mas homens falaram da parte de Deus movidos por quê?", opcoes: { a: "Pelo Espírito Santo", b: "Por anjos do céu", c: "Pela sabedoria própria", d: "Por visões noturnas" }, respostaCorreta: "a" },
+        { pergunta: "O que o Senhor não quer que ninguém se perca, mas que todos venham ao quê, segundo 2 Pedro 3:9?", opcoes: { a: "Ao arrependimento", b: "À salvação plena", c: "Ao conhecimento da lei", d: "À vida eterna" }, respostaCorreta: "a" },
+        { pergunta: "Com o que o falso mestre ou o cão retorna ao seu vômito, segundo o provérbio citado em 2 Pedro 2:22?", opcoes: { a: "Ao vômito e a porca lavada à lama", b: "Ao pecado antigo", c: "Ao erro do mundo", d: "À corrupção da carne" }, respostaCorreta: "a" },
+        { pergunta: "O que aguardamos segundo a sua promessa, novos céus e nova terra, onde habita o quê?", opcoes: { a: "A justiça", b: "A paz eterna", c: "A glória de Deus", d: "O amor divino" }, respostaCorreta: "a" }
+      ]
+    },
+    {
+      id: 23,
+      nome: "1 João",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Segundo 1 João 4:8, quem não ama não conhece a Deus, por que Deus é o quê?", opcoes: { a: "Amor", b: "Justiça", c: "Luz", d: "Fogo consumidor" }, respostaCorreta: "a" },
+        { pergunta: "De acordo com 1 João 1:9, se confessarmos os nossos pecados, Ele é fiel e justo para quê?", opcoes: { a: "Perdoar os pecados e nos purificar de toda injustiça", b: "Livrar-nos de toda condenação", c: "Conceder-nos a paz eterna", d: "Esquecer as nossas falhas" }, respostaCorreta: "a" },
+        { pergunta: "O que o perfeito amor lança fora, segundo 1 João 4:18?", opcoes: { a: "O medo", b: "O pecado", c: "A dúvida", d: "A ira" }, respostaCorreta: "a" },
+        { pergunta: "Segundo 1 João 5:4, o que vence o mundo?", opcoes: { a: "A nossa fé", b: "O amor fraternal", c: "A palavra de Deus", d: "A obediência" }, respostaCorreta: "a" },
+        { pergunta: "Como Deus se manifestou entre nós, segundo 1 João 4:9?", opcoes: { a: "Enviando seu Filho unigênito ao mundo para vivermos por Ele", b: "Mandando profetas poderosos", c: "Criando céus e terras novos", d: "Dando leis perfeitas" }, respostaCorreta: "a" }
+      ]
+    },
+    {
+      id: 24,
+      nome: "2 João",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "A quem a segunda carta de João é endereçada no seu cabeçalho?", opcoes: { a: "À eleita senhora e aos seus filhos", b: "À igreja em Éfeso", c: "Ao amado Gaio", d: "Aos irmãos de Roma" }, respostaCorreta: "a" },
+        { pergunta: "Qual é o mandamento que João diz que temos desde o princípio e que devemos praticar?", opcoes: { a: "Que nos amemos uns aos outros", b: "Que guardemos o sábado", c: "Que fujamos da idolatria", d: "Que oremos sem cessar" }, respostaCorreta: "a" },
+        { pergunta: "O que entra no mundo e não confessa que Jesus Cristo veio em carne, segundo 2 João 1:7?", opcoes: { a: "O enganador e o anticristo", b: "Os falsos profetas", c: "Os idólatras", d: "Os inimigos da cruz" }, respostaCorreta: "a" },
+        { pergunta: "Se alguém vem ter convosco e não traz esta doutrina, o que não deve ser feito em casa?", opcoes: { a: "Não o recebais em casa, nem o saudeis", b: "Não o alimenteis", c: "Não o escuteis em público", d: "Não o julgueis" }, respostaCorreta: "a" },
+        { pergunta: "Por que João diz que tinha muitas coisas para escrever, mas não quis com papel e tinta?", opcoes: { a: "Espero ir ter convosco e falar face a face", b: "Para que a vossa alegria seja completa", c: "Porque o tempo é abreviado", d: "Porque prefere o testemunho verbal" }, respostaCorreta: "a" }
+      ]
+    },
+    {
+      id: 25,
+      nome: "3 João",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "A quem é endereçada especificamente a terceira carta de João?", opcoes: { a: "Ao amado Gaio", b: "A Diótrefes", c: "A Demétrio", d: "A Timóteo" }, respostaCorreta: "a" },
+        { pergunta: "O que João deseja acima de tudo para Gaio, em 3 João 1:2?", opcoes: { a: "Que tenhas boa prosperidade e saúde, assim como é próspera a tua alma", b: "Que sejas líder de muitas igrejas", c: "Que guardes a fé até o fim", d: "Que venças todas as provações" }, respostaCorreta: "a" },
+        { pergunta: "Quem é citado na carta por amar ter o primado (o primeiro lugar) entre eles e não receber os irmãos?", opcoes: { a: "Diótrefes", b: "Demétrio", c: "Alexandre", d: "Himeneu" }, respostaCorreta: "a" },
+        { pergunta: "Quem recebe bom testemunho de todos e da própria verdade, elogiado no final da carta?", opcoes: { a: "Demétrio", b: "Gaio", c: "Onésimo", d: "Tíquico" }, respostaCorreta: "a" },
+        { pergunta: "Qual é a alegria maior que João diz não ter do que ouvir que os seus filhos andam na verdade?", opcoes: { a: "Não tenho maior alegria do que esta", b: "Ver a igreja crescer em número", c: "Saber que superaram as perseguições", d: "Receber notícias de suas viagens" }, respostaCorreta: "a" }
+      ]
+    },
+    {
+      id: 26,
+      nome: "Judas",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Como Judas se identifica no início de sua carta?", opcoes: { a: "Servo de Jesus Cristo e irmão de Tiago", b: "Apóstolo de Jesus por vocação", c: "Presbítero da igreja em Jerusalém", d: "Testemunha ocular da ressurreição" }, respostaCorreta: "a" },
+        { pergunta: "O que Judas diz que alguns homens ímpios se introduziram furtivamente para transformar?", opcoes: { a: "A graça de Deus em dissolução", b: "A sã doutrina em heresia", c: "A lei sagrada em tradição", d: "A fé cristã em comércio" }, respostaCorreta: "a" },
+        { pergunta: "Segundo Judas 1:3, para que tipo de combate ele exorta os irmãos a batalharem diligentemente?", opcoes: { a: "Pela fé que uma vez foi dada aos santos", b: "Pela pureza e santidade do templo", c: "Contra os reinos deste mundo", d: "Pela unificação das congregações" }, respostaCorreta: "a" },
+        { pergunta: "Com quem Judas compara os falsos mestres que corrompem os banquetes de amor, citando exemplos antigos?", opcoes: { a: "Com os que se rebelaram no deserto e os anjos caídos", b: "Com os profetas de Baal e os reis de Israel", c: "Com os fariseus hipócritas e os publicanos corruptos", d: "Com os moradores de Sodoma e Gomorra" }, respostaCorreta: "a" },
+        { pergunta: "Como termina a doxologia no final da carta de Judas (versículo 24)?", opcoes: { a: "Àquele que é poderoso para vos guardar de tropeçar", b: "Ao Deus único, todo poderoso e eterno", c: "A quem pertence a glória para todo o sempre", d: "Pelo poder do Espírito Santo que habita em vós" }, respostaCorreta: "a" }
+      ]
+    },
+    {
+      id: 27,
+      nome: "Apocalipse",
+      tipo_testamento: "Novo Testamento",
+      perguntas: [
+        { pergunta: "Como se inicia o livro de Apocalipse, indicando sua revelação principal?", opcoes: { a: "Revelação de Jesus Cristo, que Deus lhe deu", b: "Visão do trono e dos quatro seres viventes", c: "Palavra profética enviada aos sete anjos", d: "Profecia dos tempos do fim revelada a João" }, respostaCorreta: "a" },
+        { pergunta: "Na ilha de qual nome João diz que estava quando recebeu a visão do Apocalipse?", opcoes: { a: "Patmos", b: "Creta", c: "Melite", d: "Chipre" }, respostaCorreta: "a" },
+        { pergunta: "Quantas igrejas na Ásia recebem cartas diretas nos capítulos 2 e 3 de Apocalipse?", opcoes: { a: "Sete igrejas", b: "Doze igrejas", c: "Três igrejas", d: "Dez igrejas" }, respostaCorreta: "a" },
+        { pergunta: "Qual é o número dos selos, das trombetas e das taças que compõem os grandes juízos descritos no livro?", opcoes: { a: "Sete de cada", b: "Três de cada", c: "Doze de cada", d: "Quarenta de cada" }, respostaCorreta: "a" },
+        { pergunta: "Como se encerra o livro de Apocalipse e a Bíblia inteira no último versículo?", opcoes: { a: "A graça de nosso Senhor Jesus Cristo seja com todos vós. Amém.", b: "Certamente breve venho. Amém. Ora, vem, Senhor Jesus.", c: "Guardai estas palavras porque o tempo está próximo.", d: "Aquele que testifica estas coisas diz: Certamente venho depressa." }, respostaCorreta: "a" }
+      ]
+    }
+  ]
+};

@@ -1,94 +1,129 @@
-section.cards-livros {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 15px;
+section.cards-all-livros {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 
-    width: 70vw;
-    /* max-width: 1000px; */
+    gap: 2.5rem;
     
-    padding: 2rem;
+    padding: 1.5rem 2rem;
+    max-width: 1400px;
+    
+    margin: 0 auto;
 }
 
-section.cards-livros div.livro-card {
-    position: relative;
+section.cards-all-livros section.container-testamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
+    flex-direction: column;
+    
+    gap: 1.25rem;
+}
+
+section.cards-all-livros section.container-testamento h2 {
+    background: linear-gradient(to top, #3b82f6, #1d4ed8);
+    color: white;
+    
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+    border: none;
+    border-radius: 12px;
+    
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+    
+    text-align: center;
+    
+    width: 100%;
+    
+    padding: 0.75rem 0;
+
+    visibility: hidden;
+}
+
+section.cards-all-livros section.container-testamento div.cards-livros {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 0.85rem;
+}
+
+section.cards-all-livros section.container-testamento div.cards-livros div.livro-card {
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background: #f3f1ed;
-        
-    border: 2px solid #0080ff;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: var(--bg-card);
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 
     text-align: center;
-    
-    width: 150px;
-    height: 100px;
-    
+
+    width: 170px;
+    height: 80px;
+
     cursor: pointer;
 
     user-select: none;
 
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-section.cards-livros div.livro-card.closed {
+section.cards-all-livros section.container-testamento div.cards-livros div.livro-card:hover {
+    background: var(--bg-card-hover);
 
+    border-color: #3b82f6;
+
+    box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.2);
+}
+
+section.cards-all-livros section.container-testamento div.cards-livros div.livro-card.blocked {
     pointer-events: none;
-
-    background: #d80020;
-    color: #a30018;
-
-    border-color: #a30018;
-
+ 
+    background: rgba(239, 68, 68, 0.1);
+ 
+    border-color: rgba(239, 68, 68, 0.3);
+ 
+    opacity: 0.25;
+ 
     cursor: not-allowed;
-
 }
 
-section.cards-livros div.livro-card:hover {
-    background: #f8f9fa;
-    border-color: #00376e;
-
-    transform: scale(1.05);
-}
-
-section.cards-livros div.livro-card:active {
+section.cards-all-livros section.container-testamento div.cards-livros div.livro-card p.nome-livro {
+    color: var(--text-main);
     
-    background: #0577e9;
-    color: white;
-
-    border-color: #002850;
-
-    transform: scale(1.05);
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
-section.cards-livros div.livro-card p {
-        
-    font-family: "Mozilla Text", sans-serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-
-}
-
-section.cards-livros div.livro-card p.id-livro {
-    
+section.cards-all-livros section.container-testamento div.cards-livros div.livro-card p.id-livro {
     position: absolute;
-    top: 5px;
-    right: 8px;
+    top: 6px;
+    left: 8px;
     
-    color: gray;
-
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+    
+    font-size: 0.75rem;
+    font-weight: 600;
+    
+    border-radius: 4px;
+    
+    padding: 2px 6px;
 }
 
-section.cards-livros div.livro-card:active p.id-livro {
-    
-    color: white;
-
+section.cards-all-livros section.container-testamento div.cards-livros div.livro-card.blocked p.id-livro {
+    color: #ef4444;
 }
 
-section.cards-livros div.livro-card.closed p.id-livro{
+@media(max-width: 1440px) {
 
-    color: #a30018;
-
+    
+    
 }
