@@ -3,10 +3,10 @@ section.cards-all-livros {
     align-items: flex-start;
     justify-content: center;
 
-    gap: 2.5rem;
+    gap: 1.5rem;
     
-    padding: 1.5rem 2rem;
-    max-width: 1400px;
+    padding: 1rem 1rem 0 1rem;
+    /* max-width: 1400px; */
     
 }
 
@@ -17,7 +17,7 @@ section.cards-all-livros section.container-testamento {
     
     flex-direction: column;
     
-    gap: 1.25rem;
+    gap: 1rem;
 }
 
 section.cards-all-livros section.container-testamento h2 {
@@ -64,8 +64,8 @@ section.cards-all-livros section.container-testamento div.cards-livros div.livro
 
     text-align: center;
 
-    width: 170px;
-    height: 80px;
+    width: 138px;
+    height: 65px;
 
     cursor: pointer;
 
@@ -119,29 +119,12 @@ section.cards-all-livros section.container-testamento div.cards-livros div.livro
     color: #ef4444;
 }
 
-@media(max-width: 1440px) {
-
-    section.cards-all-livros {
-        gap: 1rem;
-
-        padding: 1.5rem 0;
-    }
-
-    section.cards-all-livros section.container-testamento div.cards-livros {
-        grid-template-columns: repeat(5, 1fr);
-    }
+@media(max-width: 1540px) {
 
     section.cards-all-livros section.container-testamento div.cards-livros div.livro-card {
-        overflow-wrap: break-word;
-        word-break: break-word;
-
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        
-        width: 130px;
-        height: 70px;
-    }    
-    
+        width: 120px;
+        height: 60px;
+    }
 }
 
 @media(max-width: 1024px) {

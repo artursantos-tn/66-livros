@@ -622,7 +622,7 @@ export const bibliaNovoTestamento = {
     },
     {
       id: 13,
-      nome: "1 Tessalonicenses",
+      nome: "1 Tessalo...",
       tipo_testamento: "Novo Testamento",
       perguntas: [
         { pergunta: "Segundo 1 Tessalonicenses 5:17, o que devemos fazer...?", opcoes: { a: "Orai sem cessar", b: "Jejuar todo mês", c: "Contribuir sempre", d: "Vigiar o templo" }, respostaCorreta: "a" },
@@ -634,7 +634,7 @@ export const bibliaNovoTestamento = {
     },
     {
       id: 14,
-      nome: "2 Tessalonicenses",
+      nome: "2 Tessalo...",
       tipo_testamento: "Novo Testamento",
       perguntas: [
         { pergunta: "Segundo 2 Tessalonicenses 3:10, o que Paulo diz sobre quem não quer trabalhar?", opcoes: { a: "Deve receber ajuda dos irmãos", b: "Também não coma", c: "Deve orar mais", d: "Deve cuidar da limpeza" }, respostaCorreta: "b" },

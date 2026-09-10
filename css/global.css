@@ -21,8 +21,7 @@
     box-sizing: border-box;
     
     outline: none;
-
-    transition: 0.2s;
+    
 }
 
 body {
@@ -31,8 +30,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    flex-direction: column;
 
     background-color: var(--bg-primary);
     color: var(--text-main);
